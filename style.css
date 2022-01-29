@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 
+:root{
+  --font-color: #1d3557;
+}
 *{
   margin: 0;
   padding: 0;
@@ -8,42 +12,44 @@
 }
 
 body {
-  background-image: url(images/bg-image1.jpg);
+  font-family: 'Oswald', sans-serif;
+  background-image: url(images/bg-image4.jpg);
   background-size: cover;
-  color: white;
+  background-position: center;
+  color: var(--font-color);
 }
 
 #container {
-  max-width: 100vw;
+  max-width: 70vw;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  margin: auto;
+  /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
   color: #8ecae6;
-  padding:0px 20px;
   font-size: 15px;
-}
-.header-container{
-  display: flex;
-  align-items: center;
-  justify-content: end;
+  width: 100%;
+  margin: auto;
 }
 
 .header-menu a{
   display: inline-block;
   line-height: 70px;
-  font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
   margin: 0px 10px;
   font-weight: bolder;
   padding: 0px 10px;
 }
 
 .header-menu a:hover{
-  background-color: #e71d36;
+  background-color: #d62828;
+  color: white;
   border-radius: 0px 0px 10px 10px;
   transition: .5s;
 }
@@ -56,4 +62,68 @@ header {
   width: 25px;
   border-radius: 10px;
   margin: 0px 10px;
+}
+
+#name{
+  text-align: center;
+  margin: 40px 0px;
+  font-size: 20px;
+  font-family: 'comforter';
+}
+
+.content-container{
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgb(189, 189, 189);
+  background-image: linear-gradient(transparent 50%, rgb(191, 191, 191) );
+  padding: 30px;
+}
+
+.person-container{
+  width: 60%;
+  margin: auto;
+}
+.person-area{
+  max-width: 100%;
+  text-align: center;
+}
+.person-title{
+  font-size: 34px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.person-subtitle{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.person-content {
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.person-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(images/1642252406803.jpeg);
+  background-position: center;
+  background-size: cover;
+  border: 5px solid white;
+  margin: 20px auto;  
+}
+
+.aboutme{
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d3003f;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
