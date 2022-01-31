@@ -13,22 +13,22 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  background-image: url(images/bg-image4.jpg);
+  background-image: url(images/bg-image9.jpg);
   background-size: cover;
   background-position: center;
   color: var(--font-color);
 }
 
 #container {
-  max-width: 70vw;
+  max-width: 55vw;
   min-height: 100vh;
-  margin: auto;
+  padding: 0px 40px;
   /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 70px;
   color: #8ecae6;
@@ -36,24 +36,24 @@ header {
   width: 100%;
   margin: auto;
 }
+.header-menu .active{
+  background-color: #d62828;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
 
 .header-menu a{
   display: inline-block;
   line-height: 70px;
   text-decoration: none;
   color: var(--font-color);
-  margin: 0px 10px;
   font-weight: bolder;
   padding: 0px 10px;
 }
 
-.header-menu a:hover{
-  background-color: #d62828;
-  color: white;
-  border-radius: 0px 0px 10px 10px;
-  transition: .5s;
+.header-menu a:hover {
+  text-decoration: underline;
 }
-
 .header-socialmedia{
   margin-left: 100px;
 }
@@ -64,31 +64,33 @@ header {
   margin: 0px 10px;
 }
 
-#name{
-  text-align: center;
-  margin: 40px 0px;
+#person-name{
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 20px;
   font-family: 'comforter';
 }
 
 .content-container{
-  width: 80%;
+  width: 70%;
   margin: auto;
-  box-shadow: 0px 0px 10px rgb(189, 189, 189);
-  background-image: linear-gradient(transparent 50%, rgb(191, 191, 191) );
-  padding: 30px;
+  /* box-shadow: 0px 0px 10px rgb(153, 153, 153); */
+  /* background-image: linear-gradient(transparent 50%, rgb(204, 204, 204) ); */
+  padding: 30px 10px;
 }
 
 .person-container{
-  width: 60%;
-  margin: auto;
+  width: 70%;
+  padding: 15px 10px;
+  box-shadow: 10px 10px 10px rgb(209, 209, 209);
+  border-radius: 20px;
 }
 .person-area{
   max-width: 100%;
   text-align: center;
 }
 .person-title{
-  font-size: 34px;
+  font-size: 25px;
   text-align: center;
   color: var(--font-color);
 }
@@ -107,8 +109,8 @@ header {
 }
 
 .person-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-image: url(images/1642252406803.jpeg);
   background-position: center;
@@ -120,10 +122,15 @@ header {
 .aboutme{
   font-size: 16px;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   background-color: #d3003f;
   color: white;
   text-decoration: none;
   font-weight: 600;
+}
+
+.aboutme:hover{
+  background-color:#a70032;
+
 }
