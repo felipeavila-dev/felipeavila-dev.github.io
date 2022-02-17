@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+}
+/* IMAGEM ADQUIRIDA GRATUITAMENTE ATRAVES DO SITE https://unsplash.com/ -- https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg&w=2400 */
+
+body {
+    background-color: #e9d8a6;
+    color: #001219;    
+    background-image: url('./images/bg6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+}
+
+.main {
+    background-color: black;
+    height: 100vh;
+    opacity: .4;
+}
+
+#container {
+    
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+}
+
+P {
+    font-size: 14px;
+
+}
+
+#texto-tarefa {
+    margin: 20px 0px;
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: #ffffff5b;
+    color: #001219;    
+    width: 350px;
+}
+
+#lista-tarefas {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#lista-tarefas li {
+    width: 50%;
+    max-width: 100%;
+    color: #001219;
+    font-weight: bold;
+    user-select: none;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    background-color: #ffffff5b ;
+    border-radius: 5px;
+    text-align: left;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+#criar-tarefa {
+    background-color: #0a9396;
+    color: white;
+}
+
+#apaga-tudo {
+    background-color: #ae2012;
+
+}
+
+#remover-finalizados {
+    background-color: #ee9b00;
+}
+
+#salvar-tarefas {
+    background-color: #005f73;
+}
+
+#remover-selecionado {
+    background-color: #bb3e03;
+}
+#remover-finalizados:hover, #salvar-tarefas:hover,
+#apaga-tudo:hover, #criar-tarefa:hover, #remover-selecionado:hover{
+    color: black;
+}
+
+#mover-baixo, #mover-cima {
+    background-color: #94d2bd;
+    color: black;
+    border: 1px solid #588174;
+}
+
+#mover-cima:hover, #mover-baixo:hover {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through solid black;
+}
+
+footer {
+    text-align: center;
+    color: #001219;
+    font-size: 14px;
+}
