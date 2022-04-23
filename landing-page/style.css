@@ -329,8 +329,12 @@ header .header-social .social-icon{
     font-size: 34px;
   }
 
-  .header-social {
+  header {
     display: none;
+  }
+
+  .principal-section .section-filter {
+    background-color: rgba(0, 0, 0, .3);
   }
 
   .principal-section .section-filter {
